@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Learning Framework]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="https://rahulshettyacademy.com"/>
+  <listeners>
+    <listener class-name="TestngDemo.ListenersTestng"/>
+  </listeners>
+  <test thread-count="5" name="Learn Testng Framework(failed)">
+    <classes>
+      <class name="TestngDemo.Testng_Day4">
+        <methods>
+          <include name="initializeDriver"/>
+          <include name="closeDriver"/>
+          <include name="RestAPIPrinciples"/>
+        </methods>
+      </class> <!-- TestngDemo.Testng_Day4 -->
+      <class name="TestngDemo.ParameterisingTestngXMLFile">
+        <methods>
+          <include name="getDetails"/>
+          <include name="getEncryptedData"/>
+        </methods>
+      </class> <!-- TestngDemo.ParameterisingTestngXMLFile -->
+    </classes>
+  </test> <!-- Learn Testng Framework(failed) -->
+</suite> <!-- Failed suite [Learning Framework] -->

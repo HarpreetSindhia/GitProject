@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Learning Framework">
+	
+	<listeners>
+		<listener class-name="TestngDemo.ListenersTestng"></listener>
+	</listeners>
+	
+	<parameter name="URL" value="https://rahulshettyacademy.com"></parameter>
+  <test name="Learn Testng Framework">
+	
+    <classes>
+      <class name="TestngDemo.Testng_Day2"/>
+      <class name="TestngDemo.Testng_Day1"/>
+      <class name = "TestngDemo.Testng_Day3"/>
+      <class name="TestngDemo.Testng_Day4"/>
+      <class name="TestngDemo.TestngHelperAttribute"/>
+      <class name = "TestngDemo.ParameterisingTestngXMLFile"/>
+      <class name ="TestngDemo.Parameterising"/>
+      
+    </classes>
+    </test>
+    <test name="DataProvideTest">
+		<classes>
+			<class name="TestngDemo.DataPrividerandParameterisation"/>
+		</classes>
+	</test>
+    </suite>
